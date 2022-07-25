@@ -1,0 +1,4 @@
+/*! 
+ Build based on gin-vue-admin 
+ Time : 1658718095000 */
+import{j as a,r as e,b as s,o as l,c as o,e as t,w as d,y as n,d as i,h as u,i as r}from"../gva/gin-vue-admin-index.1658718095000.js";const c=i("div",{class:"el-upload__text"},[u(" 拖拽或"),i("em",null,"点击上传")],-1),p=i("div",{class:"el-upload__tip"}," 请把安装包的zip拖拽至此处上传 ",-1),m={__name:"index",setup(i){const u=a(),m=e("/api"),f=a=>{if(0===a.code){let e="";a.data&&a.data.forEach(((a,s)=>{e+=`${s+1}.${a.msg}\n`})),alert(e)}else r.error(a.msg)};return(a,e)=>{const i=s("upload-filled"),r=s("el-icon"),_=s("el-upload");return l(),o("div",null,[t(_,{class:"upload-demo",drag:"",action:`${m.value}/autoCode/installPlugin`,headers:{"x-token":n(u).token},"show-file-list":!1,"on-success":f,"on-error":f,name:"plug"},{tip:d((()=>[p])),default:d((()=>[t(r,{class:"el-icon--upload"},{default:d((()=>[t(i)])),_:1}),c])),_:1},8,["action","headers"])])}}};export{m as default};
